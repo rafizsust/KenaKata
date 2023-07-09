@@ -1,0 +1,21 @@
+const userData = [
+    { id: 1,
+      email: 'user1@example.com',
+      password: 'password1',
+      name: 'John Doe',
+      contact: '1234567890',
+      address: '123 Main Street, City, Country',
+      deliveryAddress: '',
+      image: require('./assets/nike.jpg'),
+    },
+    { id: 2,
+      email: 'user2@example.com',
+      password: 'password2',
+      name: 'John Doe',
+      contact: '1234567890',
+      address: '123 Main Street, City, Country',
+      deliveryAddress: '',
+      image: require('./assets/nike.jpg'),
+    },
+  ];
+export default userData;

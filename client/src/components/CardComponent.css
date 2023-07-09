@@ -1,0 +1,36 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 20px;
+}
+
+.card-heading,
+.card-bottom {
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+}
+
+.card {
+  background-color: #f0f0e7;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 8px;
+  margin: 20px 0 30px;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.card-image-container img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 0 20px;
+}

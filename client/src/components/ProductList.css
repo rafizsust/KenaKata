@@ -1,0 +1,182 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.product-list-container {
+  display: flex;
+}
+
+.category-slider {
+  background-color: #f0f0e7;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.image-link {
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-section {
+  width: 10%;
+  padding: 20px;
+  background-color: #faf8f0;
+  color: black;
+}
+
+.left-section h3 {
+  margin-bottom: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkbox-container input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.checkbox-container button {
+  width: 100%;
+}
+
+.price-filter {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.price-filter h2 {
+  margin-bottom: 10px;
+}
+
+.price-filter .price-inputs {
+  display: flex;
+}
+
+.price-filter .price-inputs input {
+  flex: 1;
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.price-filter .price-inputs input:last-child {
+  margin-right: 0;
+}
+
+.price-filter input::placeholder {
+  color: #999;
+}
+
+.price-filter input:focus {
+  border-color: #d88200;
+}
+
+.right-section {
+  width: 90%;
+}
+
+.right-section h4 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  color: black;
+  font-weight: 300;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.product-box {
+  position: relative;
+  background-color: #f0f0e7;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+}
+
+.product-box:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0) translateY(.2%);
+  background-color: #bbb;
+}
+
+.product-image img {
+  width: 218px;
+  height: 218px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.rating {
+  color: #d88200;
+}
+
+.discount {
+  color: #ff0000;
+}
+
+.price {
+  font-weight: bold;
+  color: rgb(45, 94, 0);
+  font-size: larger;
+}
+
+.previous-price {
+  text-decoration: line-through;
+  font-size: small;
+  color: #1a1a1a;
+}
+
+/* Adjust layout for mobile view */
+@media (max-width: 768px) {
+  .product-list-container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+
+  .right-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .checkbox-container button {
+    width: 90%;
+  }
+}
